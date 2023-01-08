@@ -8,6 +8,7 @@ __pycache__/
 
 # Distribution / packaging
 .Python
+chest_xray/
 build/
 develop-eggs/
 dist/
