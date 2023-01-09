@@ -9,6 +9,8 @@ __pycache__/
 # Distribution / packaging
 .Python
 chest_xray/
+best_weights.h5
+model.h5
 build/
 develop-eggs/
 dist/
