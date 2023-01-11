@@ -4,5 +4,7 @@ from-root==1.0.2
 DateTime==4.4
 tensorflow==2.9.2
 pathlib==1.0.1
+Flask==2.1.3
+opencv-python
 
 -e .
