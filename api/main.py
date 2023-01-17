@@ -8,7 +8,7 @@ import cv2
 
 
 # Loading the trained model
-loaded_model = tf.keras.models.load_model("model.h5")
+loaded_model = tf.keras.models.load_model("model final.h5")
 
 app = FastAPI()
 
