@@ -1,35 +1,35 @@
 from flask import Flask,request, jsonify, render_template
-#import tensorflow as tf
+import tensorflow as tf
 import cv2
 
 
 CLASS_NAMES = ["NORMAL","PNEUMONIA"]
 
 # Loading the trained model
-#loaded_model = tf.keras.models.load_model("model.h5")
+loaded_model = tf.keras.models.load_model("model.h5")
 
 app = Flask(__name__)
 
 @app.route('/')
 def upload_form():
-    return render_template('upload_form.html')
+    return render_template('index.html')
 
 @app.route('/predict', methods=['POST'])
 def predict():
 
-    image = request.files['image']
+    file = request.files.get('file')
+    img_bytes = file.read()
 
-    image = tf.image.resize(image , [224 , 224] , method="nearest")
+    image = tf.image.resize(img_bytes , [224 , 224] , method="nearest")
     image = tf.expand_dims(image , 0)
 
     prediction = loaded_model.predict(image)
     if prediction[0] <= 0.5:
-         predicted_class = CLASS_NAMES[0]
+        class_name = CLASS_NAMES[0]
     else:
-        predicted_class = CLASS_NAMES[1]
+        class_name = CLASS_NAMES[1]
 
-    return {
-        'class': predicted_class}
+    return render_template('result.html',class_name=class_name)
 
 
 
