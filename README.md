@@ -13,9 +13,9 @@ The model used in this project is a pretrained convolutional neural network (CNN
 
 ## Evaluation:
 The model's performance is evaluated using metrics such as accuracy, precision, recall, and F1-score.
-- Testing Acc :  0.8445512652397156
-- Testing Precision  0.8084210753440857
-- Testing Recall  0.9846153855323792
+- Testing Acc :  0.844
+- Testing Precision  0.808
+- Testing Recall  0.984
 
 ## Conclusion:
 The model developed in this project is able to achieve high accuracy in detecting pneumonia from x-ray images. This can potentially aid radiologists in their analysis and ultimately improve patient outcomes. However, it is important to note that deep learning models may not be 100% accurate and should be used as a tool to aid in the diagnostic process, not replace it.
