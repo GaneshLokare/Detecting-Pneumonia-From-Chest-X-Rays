@@ -27,7 +27,7 @@ The model developed in this project is able to achieve high accuracy in detectin
 - Install the required libraries mentioned in the requirements.txt file
 - Run the main.py file
 - The model will be trained and evaluated on the dataset
-- The performance metrics will be displayed on the console as well as it will be stored in logs.
+- The performance metrics will be displayed on the console as well as it will be stored in the logs.
 - Model is deployed using streamlit. Run "streamlit run Home.py" command and go to "http://192.168.43.166:8501" link.
 
 Note: The trained model and the weights are not included in this repository, please train the model on your own machine.
