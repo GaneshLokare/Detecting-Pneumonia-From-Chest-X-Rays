@@ -6,7 +6,7 @@ import cv2
 
 CLASS_NAMES = ["NORMAL","PNEUMONIA"]
 
-st.set_page_config(page_title="YOLO Object Detection",
+st.set_page_config(page_title="Chest X-Ray checking",
                    layout='wide',
                    page_icon='./icon/object.png')
 
@@ -85,7 +85,7 @@ def main():
                         'class': predicted_class,
                         'confidence' : float(confidence)}
                     
-                    st.success("Prediction")
+                    st.success("Result")
                     st.json(pred)
                    
         

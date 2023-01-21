@@ -68,4 +68,3 @@ class Evaluate_model_performance:
         except  Exception as e:
                 raise  XrayException(e,sys)
 
-Evaluate_model_performance.Evaluate()

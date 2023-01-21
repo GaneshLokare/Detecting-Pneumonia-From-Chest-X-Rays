@@ -11,6 +11,7 @@ __pycache__/
 chest_xray/
 best_weights.h5
 model final.h5
+api/
 build/
 develop-eggs/
 dist/
