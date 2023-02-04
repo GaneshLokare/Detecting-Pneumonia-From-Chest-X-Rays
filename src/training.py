@@ -7,7 +7,7 @@ from exception import XrayException
 tf.random.set_seed(4)
 
 
-class Train_model:
+class TrainModel:
     def __init__():
         pass
 

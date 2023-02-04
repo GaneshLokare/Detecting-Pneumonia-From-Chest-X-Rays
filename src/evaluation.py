@@ -6,14 +6,14 @@ from logger import logging
 
 tf.random.set_seed(4)
 
-# Loading the trained model
-loaded_model = tf.keras.models.load_model("model final.h5")
+
 
 class Evaluate_model_performance:
-    def __init__():
-        pass
+    def __init__(self):
+        # Loading the trained model
+        self.loaded_model = tf.keras.models.load_model("model final.h5")
 
-    def Evaluate():
+    def Evaluate(self):
         ''' Evaluate model's performance '''
         try:
             
@@ -52,7 +52,7 @@ class Evaluate_model_performance:
             )
 
             # Evaluating the loaded model
-            loss, acc, prec, rec = loaded_model.evaluate(test_dataset)
+            loss, acc, prec, rec = self.loaded_model.evaluate(test_dataset)
             # print evaluation report
             print(" Testing Acc : " , acc)
             print(" Testing Precision : " , prec)

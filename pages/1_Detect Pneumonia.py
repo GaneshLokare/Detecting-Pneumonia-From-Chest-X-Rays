@@ -83,7 +83,7 @@ def main():
                         confidence = prediction[0] * 100
                     pred = {
                         'class': predicted_class,
-                        'confidence' : float(confidence)}
+                        'confidence' : int(confidence)}
                     
                     st.success("Result")
                     st.json(pred)
