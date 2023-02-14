@@ -31,3 +31,7 @@ The model developed in this project is able to achieve high accuracy in detectin
 - Model is deployed using streamlit. Run "streamlit run Home.py" command and go to "http://192.168.43.166:8501" link.
 
 Note: The trained model and the weights are not included in this repository, please train the model on your own machine.
+
+## Demo Video:
+https://user-images.githubusercontent.com/90838133/218655963-6f1c3a20-24ca-48ec-92f4-2f148feb2db2.mp4
+
