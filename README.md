@@ -33,5 +33,9 @@ The model developed in this project is able to achieve high accuracy in detectin
 Note: The trained model and the weights are not included in this repository, please train the model on your own machine.
 
 ## Demo Video:
-https://user-images.githubusercontent.com/90838133/218655963-6f1c3a20-24ca-48ec-92f4-2f148feb2db2.mp4
+
+
+
+
+https://user-images.githubusercontent.com/90838133/218657261-ecb71db2-b039-4db3-a17b-a6d9e2d3132d.mp4
 
